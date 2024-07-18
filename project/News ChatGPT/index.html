@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <style>
+        .news-card {
+            display: flex;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .news-card img {
+            max-width: 150px;
+            margin-right: 10px;
+        }
+        .news-card div {
+            flex: 1;
+        }
+        #cardscontainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .active {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="datepicker" placeholder="Select a date (DD-MM-YYYY)">
+        <button id="fa">Search Top Headlines</button>
+    </div>
+    <div id="cardscontainer"></div>
+
+    <!-- News card template -->
+    <template id="template-news-card">
+        <div class="news-card">
+            <img id="news-img" src="" alt="News Image">
+            <div>
+                <h3 id="news-title"></h3>
+                <p id="news-source"></p>
+                <p id="news-desc"></p>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        const API_KEY = "d2ef9b95cb4743ee9dfab148abbe2979";
+        const url = "https://newsapi.org/v2/top-headlines";
+
+        window.addEventListener("load", () => fetchTopHeadlines());
+
+        async function fetchTopHeadlines(date = null) {
+            let apiUrl = `${url}?apiKey=${API_KEY}`;
+
+            if (date) {
+                apiUrl += `&country=us&category=general&q=*&from=${date}&to=${date}`;
+            } else {
+                console.log("Date not provided, fetching today's top headlines.");
+            }
+
+            console.log(`Fetching top headlines for date: ${date}`);
+            console.log(`API URL: ${apiUrl}`);
+
+            try {
+                const res = await fetch(apiUrl);
+                if (!res.ok) {
+                    throw new Error(`HTTP error! status: ${res.status}`);
+                }
+
+                const data = await res.json();
+                console.log(`API response: `, data);
+
+                if (!data.articles || data.articles.length === 0) {
+                    console.log('No articles found for the given date.');
+                    bindData([]);
+                    return;
+                }
+
+                // Sort articles by publishedAt date (latest first)
+                const sortedArticles = data.articles.sort((a, b) => {
+                    return new Date(b.publishedAt) - new Date(a.publishedAt);
+                });
+
+                bindData(sortedArticles);
+            } catch (error) {
+                console.error('Error fetching the top headlines:', error);
+                bindData([]);
+            }
+        }
+
+        function bindData(articles) {
+            const cardsContainer = document.getElementById("cardscontainer");
+            const newsCardTemplate = document.getElementById("template-news-card");
+
+            cardsContainer.innerHTML = '';
+
+            if (articles.length === 0) {
+                cardsContainer.innerHTML = '<p>No articles found.</p>';
+                return;
+            }
+
+            articles.forEach((article) => {
+                if (!article.urlToImage) return;
+
+                const cardClone = newsCardTemplate.content.cloneNode(true);
+                fillDataInCard(cardClone, article);
+                cardsContainer.appendChild(cardClone);
+            });
+        }
+
+        function fillDataInCard(cardClone, article) {
+            const newsImg = cardClone.querySelector("#news-img");
+            const newsTitle = cardClone.querySelector("#news-title");
+            const newsSource = cardClone.querySelector("#news-source");
+            const newsDesc = cardClone.querySelector("#news-desc");
+
+            newsImg.src = article.urlToImage;
+            newsTitle.innerHTML = `${article.title.slice(0, 60)}...`;
+            newsDesc.innerHTML = `${article.description.slice(0, 150)}...`;
+
+            const date = new Date(article.publishedAt).toLocaleString("en-US", { timeZone: "Asia/Jakarta" });
+
+            newsSource.innerHTML = `${article.source.name} · ${date}`;
+
+            cardClone.firstElementChild.addEventListener("click", () => {
+                window.open(article.url, "_blank");
+            });
+        }
+
+        const searchButton = document.getElementById("fa");
+        const datePicker = document.getElementById("datepicker");
+
+        searchButton.addEventListener("click", () => {
+            const selectedDate = convertDateFormat(datePicker.value);
+            if (!selectedDate) return;
+
+            fetchTopHeadlines(selectedDate);
+        });
+
+        // Function to convert DD-MM-YYYY to YYYY-MM-DD
+        function convertDateFormat(inputDate) {
+            if (!inputDate) return null;
+            
+            const [dd, mm, yyyy] = inputDate.split('-');
+            return `${yyyy}-${mm}-${dd}`;
+        }
+    </script>
+</body>
+</html>
