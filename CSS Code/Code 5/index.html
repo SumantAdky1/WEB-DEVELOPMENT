@@ -1,0 +1,62 @@
+<!-- BOX MODEL -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    
+    <style>
+
+
+        .Box {
+            background-color: aqua;
+        }
+
+        .Box1 {
+            color: rgb(109, 172, 15);
+            padding: 10px;
+            margin: 35px;
+            border: 2px solid blue;
+            height: 200px;
+            /* Content + Border + Padding = height.
+            If you write box-sizing: border-box;*/
+            box-sizing: border-box;
+        }
+
+
+        /* MARGIN COLLAPS */
+
+        /* If there are 2 margins of two different classes then
+           Which margin is Greater that will be applied.
+           In the above example Box1 margin is 35px and in Below 
+           Box2 has 25px. So, the Box1 margin will be applied  */
+
+
+        .Box2 {
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            /* Content + Border + Padding = height.
+            If you write box-sizing: border-box;*/
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="Box Box1">Hello I am Box</div>
+    <div class="Box Box2">Hello I am another Box</div>
+
+</body>
+</html>

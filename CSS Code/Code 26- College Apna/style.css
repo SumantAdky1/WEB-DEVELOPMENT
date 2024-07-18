@@ -1,0 +1,17 @@
+* {
+    font-family: Courier new;
+}
+h1 {
+    color: #1b74e4;
+}
+.sear {
+    background-color: black;
+    color: white;
+}
+.log {
+    color: black;
+    background-color: aqua;
+}
+.log:hover {
+    background-color: rgb(100, 187, 143);
+}

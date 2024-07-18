@@ -1,0 +1,25 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(238, 18, 29, 0.43);
+    
+    /* #ee121d 79 is in Hexadecimal form
+       #ee121d ff means Clearly visible
+       #ee121d 00 means hidden */
+    background-color: #ee121d79;
+    /* If you make #ee121d79 as #ee121d00 then the
+    color will be hidden but not the element i.e; heading 3 */
+}
+
+
+
+/* Opacity- means it sets the Element opacity(visible or hidden) */
+#opacity {
+    background-color: #00ffff84;
+    
+    /* If you set opacity: 0 then whole Element 
+    will be hidden Not just the color */
+    opacity: 0;
+
+    opacity: 1;
+}

@@ -1,0 +1,16 @@
+div 
+{
+    background-color: aqua;
+}
+p
+{
+ background-color: red;   
+}
+
+button {
+    background-color: rgb(248, 194, 123);
+}
+
+button:hover {
+    background-color: rgb(133, 160, 160);
+}

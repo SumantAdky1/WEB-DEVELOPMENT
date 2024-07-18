@@ -1,0 +1,88 @@
+<!-- Selectors MasterClass -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+
+        /* Class Selector */
+        .red {
+            background-color: rgb(182, 146, 146);
+        } 
+
+        /* ID Selector */
+        #green {
+            background-color: burlywood;
+        }
+
+        /* Child Selector  */
+        div > p {
+            background-color: rgb(124, 62, 62);
+        }
+
+        /* Descent Selector */
+        div p {
+            color: rgb(216, 93, 93)
+        }
+
+        /* No space left at the border */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Psedu Selector */
+        a:visited {
+            color: rgb(255, 3, 255)
+        }
+
+        a:link {
+            color: blue
+        }
+
+        /* After clicking on Link */
+        a:active {
+            background-color:brown;
+            color:rgb(154, 184, 166);
+        }
+
+        /* While clicking on link */
+        a:hover {
+            background-color: aqua;
+        }
+
+        /* First child i.e; first Para will be of this Color */
+        p:first-child {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am Div
+        <p>I am Paragraph inside div</p>
+    </div> 
+
+    <div class="red">
+        <span>
+            <p>
+                I am para inside Span inside div
+            </p>
+        </span>
+    </div>
+    
+    <div id="green">
+        I am another Div
+    </div>
+
+    <a target="_blank" href="https://www.google.com">Go to Google</a><br>
+    <a target="_blank" href="https://www.codewithharry.com">Go to CodeWithHarry</a>
+
+    <main class="One">
+        <p>I am first</p>
+        <p>I am Second</p>
+    </main>
+</body>
+</html> 

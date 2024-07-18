@@ -1,0 +1,48 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+#Static {
+    background-color: yellow;
+    top: 100px;
+    left: 100px;
+    /* there will not come any change as u declared it as static. */
+    position: static;
+}
+
+#relative {
+    background-color: yellow;
+    top: 100px;
+    left: 100px;
+    /* if u have 3 div's and in that 2n div is relative then
+        3rd div leaves space for 2nd div */
+    position: relative;
+}
+
+#absolute {
+    background-color: yellow;
+    top: 100px;
+    left: 100px;
+    /* Here section is the parent of absolute element.
+        Now, the element shifts from top line of the page and left line of the page also. */
+    /* if u have 3 div's and in that 2n div is relative then
+        3rd div Doesnot leaves space for 2nd div */
+    position: absolute;
+}
+
+#fixed {
+    background-color: yellow;
+    top: 100px;
+    left: 100px;
+    /* if u have 3 div's and in that 2n div is relative then
+        3rd div Doesnot leaves space for 2nd div */
+    /* The element will be fixed on ur screen
+        if u scroll down then element also comes down.  */
+    position: fixed;
+}

@@ -1,0 +1,54 @@
+/* Here the <h2> is Block element. Now, we 
+    are changing it to Inline element.*/
+/* h1 {
+    display: inline;
+    background-color: aqua;
+} */
+
+/* Here the <span> is Inline element. Now, we 
+    are changing it to Block element.*/
+/* span {
+    display: block;
+    background-color: pink;
+} */
+
+span {
+    /* background-color:limegreen; */
+    border: 2px solid black;
+    
+    /* The span is a inline element.
+    So height and width will not be Set. */
+    height: 100px;
+    width: 200px;
+    /* Change span to Block Element .
+        To have Height and Width size in Span Element*/
+
+
+    /* only from left and right... the Padding AND Margin will be set.
+    Not from the top and bottom(Overlap).
+    To see it clearly remove background color */
+    padding: 50px;
+
+    /* Extra space will be given on left and right. */
+    margin: 20px; 
+}
+
+/* INLINE-BLOCK */
+div {
+    height: 150px;
+    width: 150px;
+    background-color: lime;
+    border: 2px solid black;
+    margin: 5px;
+
+    /* inline-block means- The properties applied to a Element
+    is Block Element Properties.
+    But Element behaves as a Inline Element. */
+    display: inline-block;
+}
+
+.third {
+    /*If we use "none" means.. The element for which display is given "none"
+    will be not displayed / Printed  */
+    display: none;
+}

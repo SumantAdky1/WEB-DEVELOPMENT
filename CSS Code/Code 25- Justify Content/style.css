@@ -1,0 +1,33 @@
+#container {
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+
+    display: flex;
+
+    flex-direction: row;
+
+    /* Here, the start is from left.
+        Because, we wrote only 'row' above. */
+    justify-content: flex-start;
+
+    flex-direction: row-reverse;
+    /* row-reverse means right to left.
+        Here, flex-end is there it means
+        Elements will be at left (as left is end here) */
+    justify-content: flex-end;
+
+}
+h1 {
+    text-align: center;
+}
+#container div{
+    height: 100px;
+    
+    width: 50px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

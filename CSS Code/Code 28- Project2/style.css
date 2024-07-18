@@ -1,0 +1,80 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.main {
+    height: 100%;
+    padding: 60px;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: antiquewhite;
+}
+.store {
+    margin-top: -1px;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+.hello {
+    margin-top: 100px;
+}
+h1 {
+    font-size: 70px;   
+    margin-top: 0%;
+    margin-bottom: 15%;
+}
+sup {
+    color: rgb(255, 162, 0);
+    font-size: 10px;
+}
+.case {
+    display: flex;
+    justify-content: space-between;
+}
+.pg {
+    display: flex;
+    justify-content: space-around;
+    width:20%;
+    margin-right: 10px;
+}
+p {
+    margin-top: -7px;
+}
+.photo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    border-radius: 30px;
+}
+h3 {
+    margin-top: 30px;
+}
+.fw {
+    margin-top: -30px;
+    font-weight: 100;
+}
+.photo1 i {
+    position: absolute;
+    top: 170%;
+    font-size: 50px;
+    left: 510px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 3px 10px;
+}
+.photo2 i {
+    position: absolute;
+    top: 170%;
+    font-size: 50px;
+    left: 1000px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 3px 10px;
+    color: white;
+    background-color: black;
+}

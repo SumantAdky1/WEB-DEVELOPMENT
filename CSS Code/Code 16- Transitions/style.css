@@ -1,0 +1,31 @@
+/* Transition Shorthand
+    property name | duration | timing-function | delay */
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: limegreen;
+
+    /* the Element will come in middle by leaving 10px gap from top*/
+    margin: 0 auto;
+    margin-top: 10px;
+
+    /* transition takes 1 second to change from
+     limegreen to brown. You can use 1ms for milisecond*/
+    
+     /* transition-duration: 1s;
+    transition-delay: 1s; */
+
+    /* ease-in means smooth transitions */
+    /* You can use ease-in-out, ease also */
+    transition: margin-top 2s ease-in-out 0.3s;
+}
+
+
+div:hover {
+    background-color: brown;
+    /* border-radius: 50%; */
+
+    /* margin-top from 10px, it comes to 400px */
+    margin-top: 400px;
+}

@@ -1,0 +1,95 @@
+html, body {
+    width: 95%;
+    height: 100%;
+}
+.name {
+    margin-top: 3px;
+    display: flex;
+}
+.nav {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 500px;
+}
+.menus {
+    border: 1px solid black;
+    margin-top: 26px;
+    margin-left: 2px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 20px;
+    height: 20px;
+}
+.menu {
+    display: flex;
+}
+
+.sign {
+    display: flex;
+    height: 20px;
+    margin-top: 23px;
+}
+.signup {
+    background-color: rgb(251, 124, 70);
+    margin-right: 2px;
+    border-radius: 20px;
+    border: none;
+}
+.image {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 21px;
+}
+.names {
+    margin-top: 25px;
+    margin-left: 1px;
+}
+.text {
+    font-size: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    margin-top: 200px;
+    left: 100px;
+    /* justify-content: center;
+    width: 100%;
+    position: relative; */
+    /* transform: translate(-10%,-10%); */
+    width: 100%;
+}
+.mainimg1 {
+    position: absolute;
+    margin-top: 275px;
+    margin-left: 450px;
+    height: 300px;
+    border-radius: 20px;
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+.mainimg2 {
+    width: 200px;
+    position: absolute;
+    margin-top: 275px;
+    margin-left: 450px;
+    height: 300px;
+    border-radius: 20px;
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+.mainimg3 {
+    width: 200px;
+    position: absolute;
+    margin-top: 275px;
+    margin-left: 450px;
+    height: 300px;
+    border-radius: 20px;
+    transform: translate(-50%,-50%) ;
+}
+#main {
+    background-color: rgb(181, 193, 163);
+    width: fit-content;
+}
+.login {
+    border-radius: 20px;
+    border: none;
+}

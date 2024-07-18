@@ -1,0 +1,68 @@
+div {
+    height: 100px;
+}
+
+div {
+    height: 400px;
+    width: 400px;
+
+    /* To know how much space did Div occupied */
+    background-color: aqua;
+}
+
+
+
+/* BORDER PROPERTY 
+border-width,
+border-style,
+border-color */
+
+div {
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(110, 60, 60);
+}
+
+h1 {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: darkgreen;
+}
+
+
+/* Border Shorthand
+    width | style | color
+    can be written in one line */
+
+div {
+    border: 5px solid red;
+}
+
+
+
+/* BORDER SIDES-- changing the sides of the border
+    border-left, border-right, 
+    brorder-top, border-bottom */
+
+/* div {
+    border-left-color: yellow;
+    border-right-style: dashed;
+    border-top-style: dashed;
+    border-bottom-color: darkblue;
+} */
+
+
+
+/* BORDER RADIUS
+    used to round the corners of the Box */
+
+div {
+    /* border-radius: 50% means We will get circle border..
+    In this the widht and height of the div must be same */
+    border-radius: 50%;
+
+    border-radius: 25%;
+    /* You can also make only one edge as Round */
+    border-top-right-radius: 50px;
+}
+

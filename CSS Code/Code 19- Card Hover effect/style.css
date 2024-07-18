@@ -1,0 +1,25 @@
+.Card {
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 40px;
+    display: inline-block;
+    box-shadow: 2px 3px 5px black;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+
+img {
+    border-top-left-radius: 20px;
+}
+
+
+h3,p {
+    padding-left: 10px;
+}
+
+
+.Card:hover {
+    box-shadow: 4px 8px 10px goldenrod;
+}

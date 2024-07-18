@@ -1,0 +1,86 @@
+body {
+    margin-left: 20%;
+}
+img {
+    margin-left: 150px;
+    background-color: rgba(128, 128, 128, 0.164);
+    margin-left: 0px;
+    padding-left: 140px;
+    padding-right: 140px;
+    width: 100%;
+    height: 70px;
+    width: 295px;
+}
+div {
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.in {
+    padding-left: 80px;
+    border: 2px solid black;
+    padding-right: 80px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    border: none;
+    border-top: 3px solid rgb(33, 134, 33);
+
+}
+.up {
+    padding-left: 80px;
+    border: 2px solid black;
+    padding-right: 80px;
+    width: 100%px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    border: none;
+    border-top: 3px solid rgb(33, 134, 33);
+}
+div:hover {
+    background-color: antiquewhite;
+}
+.username {
+    height: 39px;
+    margin-left: 30px;
+    width: 520px;
+}
+.password {
+    height: 39px;
+    margin-left: 30px;
+    width: 520px;
+}
+.username, .password {
+    border-radius: 6px;
+    border: solid #C2C7D0;
+
+}
+.input {
+    border: none;
+    position: absolute;
+    top: 10px;
+    padding-left: 20px;
+}
+.input::placeholder {
+    font-size: 20px;
+    position: absolute;
+    top: -2px;
+}
+.input2 {
+    border: none;
+    position: absolute;
+    top: 11px;
+    padding-left: 20px;
+}
+.input2::placeholder {
+    font-size: 20px;
+    position: absolute;
+    top: -2px;
+}
+.ri-account-circle-fill {
+    position: absolute;
+    top: 253px;
+}
+.ri-lock-2-line {
+    position: absolute;
+    top: 330px;
+}

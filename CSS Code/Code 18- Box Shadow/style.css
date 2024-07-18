@@ -1,0 +1,36 @@
+div {
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    background-color: aquamarine;
+    margin: 10px auto;
+
+ /* box-shadow: x    y  blurry shadow-color */
+    box-shadow: 3px 3px 10px black;
+}
+
+
+/* BACKGROUND IMAGE */
+.inner {
+    width: 400px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 10px auto;
+    color: rgb(200, 255, 0);
+    background-image: url("down.jpg");
+
+    /* background-size: contain | cover | auto */
+
+    /* background-size: contain;  it means Image will repeat*/
+    background-size: contain;
+
+    /* background-size: cover; it means We are Croping the image */
+    /* Mainly used */
+    background-size: cover;
+
+    /* background-size: auto;  it means the image will be streached*/
+    background-size: auto;
+
+    /* This can also be done if you don't want to repeat the picture */
+    background-repeat: no-repeat;
+}

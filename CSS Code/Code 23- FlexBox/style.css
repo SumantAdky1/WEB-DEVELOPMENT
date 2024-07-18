@@ -1,0 +1,27 @@
+#container {
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    /* All the elements fit'ed in the container.
+     (Avoid's container overflow)*/
+    display: flex;
+
+    /* Arranges elements in Column wise. */
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+}
+#container div{
+    height: 100px;
+    /* if u give more width- elements fit's as per
+        the width of container. */
+    /* if u give less width- How space required by element
+        that much only space taken by the element. */
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
