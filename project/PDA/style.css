@@ -104,7 +104,7 @@ a {
     color: rebeccapurple;
 }
 .alumni {
-    width: 150px;
+    width: 650px;
     height: 150px;
 }
 .img1 {
@@ -113,5 +113,6 @@ a {
     object-fit:fill;
 }
 .info{
-    width: ;
+    width: 100%;
+    
 }
