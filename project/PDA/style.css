@@ -10,9 +10,10 @@
 }
 .deptname {
     margin-top: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-weight: bolder;
     font-size: 20px;
+    color: #264de4;
 }
 .thought {
     background-color:aquamarine;
@@ -24,7 +25,7 @@
 }
 
 .pic {
-    width: 1359px;
+    width: 1459px;
     height: 550px;
 }
 .event {
@@ -32,15 +33,15 @@
     height: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 40px;
     color: rebeccapurple;
 }
 .pg2 {
     background-color: antiquewhite;
 }
-table {
+#events1 {
     padding: 50px;
-    width: 1325px;
+    width: 1425px;
     height: fit-content;
 }
 tr {
@@ -55,7 +56,7 @@ td {
     height: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 40px;
     color: rebeccapurple;
 }
 .updates {
@@ -72,6 +73,45 @@ input {
     top: 50%;
     
 }
+.pg3 {
+    border-bottom: solid 1px black;
+}
 .separate {
     display: flex;
+}
+a {
+    text-decoration: none;
+}
+.text-justify {
+    font-size: 20px;
+}
+.cie {
+    font-size: 50px;
+    position: relative;
+    left: 250px;
+    text-decoration: underline;
+}
+.internal {
+    font-size: 30px;
+}
+.alum {
+    margin-top: 10px;
+    background-color:aquamarine;
+    height: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rebeccapurple;
+}
+.alumni {
+    width: 150px;
+    height: 150px;
+}
+.img1 {
+    width: 250px;
+    height: 250px;
+    object-fit:fill;
+}
+.info{
+    width: ;
 }
