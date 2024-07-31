@@ -132,10 +132,10 @@ a {
 .about3 {
     width: 100%;
 }
-
+/* 
 .sep {
-    /* display: flex; */
-}
+    display: flex;
+} */
 .about4 {
     margin-left: 90px;
 }
@@ -143,10 +143,88 @@ a {
     color: blueviolet;
 }
 .a{
-    background-color: aqua;
-    color: #090909;
+    background-color: rgb(89, 154, 89);
+    color: #ffff;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 .c{
-    background-color: aqua;
-    color: #090909;
+    background-color: rgb(89, 154, 89);
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.mission {
+    color: blueviolet;
+    font-size: 20px;
+}
+.about2 {
+    font-size: 20px;
+}
+
+
+
+
+/* CIE.HTML */
+.see-cie {
+    margin-left: 40%;
+}
+.see {
+    margin-top: 30px;
+    background-color:aquamarine;
+    height: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rebeccapurple;
+}
+.see-res {
+    width: 100%;
+}
+
+.batch22-23 {
+    margin-left: 45%;
+    font-size: 25px;
+}
+tr {
+    font-size: 20px;
+}
+.head {
+    text-decoration: underline;
+    background-color:rgb(193, 191, 191);
+    color:chocolate;
+}
+
+td {
+    background-color: a;
+}
+
+.cie-marks {
+    margin-top: 30px;
+    background-color:aquamarine;
+    height: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rebeccapurple;   
+}
+
+.sem-6 {
+    background-color:rgb(193, 191, 191);
+    color:chocolate;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.cie-all-sem {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.batch21 {
+    margin-top: 10px;
+    margin-left: 46%;
+    font-size: 25px;
 }
