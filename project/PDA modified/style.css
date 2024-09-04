@@ -1,0 +1,232 @@
+* {
+    margin: 2px 4px 2px 2px;
+    box-sizing: border-box;
+}
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.deptname {
+    margin-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bolder;
+    font-size: 20px;
+    color: #264de4;
+}
+.thought {
+    background-color:aquamarine;
+    height: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: rebeccapurple;
+}
+
+.pic {
+    /* width: 1459px; */
+    height: 550px;
+    width: 100%;
+}
+.event {
+    background-color:aquamarine;
+    height: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rebeccapurple;
+}
+.pg2 {
+    background-color: antiquewhite;
+}
+#events1 {
+    /* padding: 10%; */
+    /* width: 1425px; */
+    width: 100%;
+}
+tr {
+    height: 90px;
+}
+td {
+    text-align: center;
+}
+.update {
+    margin-top: 10px;
+    background-color:aquamarine;
+    height: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rebeccapurple;
+}
+.updates {
+    width: 60%;
+    height: 250px;
+    border-right: solid 0.9px black;
+}
+/* input {
+    align-items:end;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    left: 190px;
+    top: 50%;
+    
+} */
+.pg3 {
+    border-bottom: solid 1px black;
+}
+.separate {
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+.text-justify {
+    font-size: 20px;
+}
+.cie {
+    font-size: 50px;
+    position: relative;
+    left: 250px;
+    text-decoration: underline;
+}
+.internal {
+    font-size: 30px;
+}
+.alum {
+    margin-top: 10px;
+    background-color:aquamarine;
+    height: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rebeccapurple;
+}
+.alumni {
+    width: 650px;
+    height: 150px;
+}
+.img1 {
+    width: 250px;
+    height: 250px;
+}
+.info{
+    width: 100%;
+    text-align: center;
+    line-height: 2;
+}
+
+
+/* about.html page */
+.about {
+    background-color: antiquewhite;
+}
+.about1 {
+    color: blue;
+}
+.about2 {
+    color: blueviolet;
+
+}
+.about3 {
+    width: 100%;
+}
+/* 
+.sep {
+    display: flex;
+} */
+.about4 {
+    margin-left: 90px;
+}
+.sub {
+    color: blueviolet;
+}
+.a{
+    background-color: rgb(89, 154, 89);
+    color: #ffff;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.c{
+    background-color: rgb(89, 154, 89);
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.mission {
+    color: blueviolet;
+    font-size: 20px;
+}
+.about2 {
+    font-size: 20px;
+}
+.about-dept {
+    text-align: left;
+}
+
+
+
+/* CIE.HTML */
+.see-cie {
+    margin-left: 40%;
+}
+.see {
+    margin-top: 30px;
+    background-color:aquamarine;
+    height: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rebeccapurple;
+}
+.see-res {
+    width: 100%;
+}
+
+.batch22-23 {
+    margin-left: 45%;
+    font-size: 25px;
+}
+tr {
+    font-size: 20px;
+}
+.head {
+    text-decoration: underline;
+    background-color:rgb(193, 191, 191);
+    color:chocolate;
+}
+
+td {
+    background-color: a;
+}
+
+.cie-marks {
+    margin-top: 30px;
+    background-color:aquamarine;
+    height: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rebeccapurple;   
+}
+
+.sem-6 {
+    background-color:rgb(193, 191, 191);
+    color:chocolate;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.cie-all-sem {
+    display: flex;
+    justify-content: space-between;
+}
+.batch21{
+    margin-top: 10px;
+    margin-left: 46%;
+    font-size: 25px;
+}
